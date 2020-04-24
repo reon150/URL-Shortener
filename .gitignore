@@ -1,0 +1,7 @@
+.vscode/
+
+venv/
+url-shortenet-env/
+
+*.pyc
+__pycache__/

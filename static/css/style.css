@@ -1,0 +1,114 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+body {
+    background: #36D1DC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+header {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 3rem auto;
+}
+
+h1 {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    color: #054369f3;
+    font-family: 'Lato', sans-serif;
+    font-size: 3rem;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+main {
+    width: 50%;
+    margin: auto;
+    color: whitesmoke;
+}
+
+.container {
+    background: #1e3c72;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2a5298, #1e3c72);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2a5298, #1e3c72); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin: 1rem 0;
+    padding: 2.5rem;
+    border-radius: 1rem;
+}
+
+.btn {
+	box-shadow:inset 0px 1px 0px 0px #54a3f7;
+	background:linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+	background-color:#007dc1;
+	border-radius:3px;
+	border:1px solid #124d77;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size: 1.5rem;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #154682;
+}
+.btn:hover {
+	background:linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+	background-color:#0061a7;
+}
+.btn:active {
+	position:relative;
+	top:1px;
+}
+
+.container input, .container .btn {
+    display: block;
+    padding: 1rem;
+    width: -webkit-fill-available;
+    border-radius: 1rem;
+}
+
+.container input {
+    margin: 1rem auto;
+}
+
+.shortened {
+    /*visibility: hidden;*/
+}
+
+.url-shortened {
+    border: 4px solid #07076d;
+    padding: 1rem;
+}
+
+footer {
+    margin: 0 1rem;
+    color: whitesmoke;
+}
+
+@media (max-width: 700px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    header {
+        margin: 1rem auto;
+    }
+
+    main {
+        width: auto;
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+
+    .container {
+        margin-bottom: 0;
+    }
+}

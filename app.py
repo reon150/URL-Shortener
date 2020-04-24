@@ -7,6 +7,11 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database/urls.db'
 
 db.init_app(app)
 
+"""
+This is to create the database when it doesn't exist yet
+with app.app_context():
+    db.create_all()"""
+
 @app.route('/')
 def index():
     return render_template('index.html')

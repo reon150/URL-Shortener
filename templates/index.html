@@ -15,18 +15,17 @@
             <h2>Please paste the URL to be shortened</h2>
             <form method="POST" id="form" action="/getShortURL">
                 <input type="text" name="url" id="url" placeholder="Enter the link here" required>
-                <button type="submit" class="btn">Shorten URL</button>
+                <button type="button" id="buttonForm" class="btn">Shorten URL</button>
             </form>
         </div>
-        <div class="container shortened">
+        <div class="container" id="shortenedDiv">
             <h2>Your shortened URL</h2>
-            <div class="url-shortened">
-                wdadw
-            </div>
+            <div class="url-shortened" id="url-shortened"></div>
         </div>
     </main>
     <footer>
         Made by reon150
     </footer>
+    <script src="{{url_for('static', filename='js/main.js')}}"></script>
 </body>
 </html>

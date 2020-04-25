@@ -8,6 +8,8 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database/urls.db'
 
 db.init_app(app)
 
+url_server = 'http://localhost:5000/'
+
 """
 This is to create the database when it doesn't exist yet
 with app.app_context():
@@ -25,7 +27,7 @@ def addToBD():
     newURL = URLs(original_url=original_url, short_url=short_url)
     db.session.add(newURL)
     db.session.commit()
-    return render_template('index.html')
+    return url_server + short_url
 
 @app.route('/<shortURL>')
 def redirectURL(shortURL):

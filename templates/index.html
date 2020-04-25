@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Url Shortener</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
-
 <body>
     <header>
         <h1>URL SHORTENER</h1>
@@ -15,8 +13,8 @@
     <main>
         <div class="container">
             <h2>Please paste the URL to be shortened</h2>
-            <form action="" method="post">
-                <input type="text" placeholder="Enter the link here">
+            <form method="POST" id="form" action="/getShortURL">
+                <input type="text" name="url" id="url" placeholder="Enter the link here" required>
                 <button type="submit" class="btn">Shorten URL</button>
             </form>
         </div>

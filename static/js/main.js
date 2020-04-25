@@ -17,6 +17,7 @@ function ajax() {
             if (xhr.status >= 200 && xhr.status < 300) {
                 // The request is successful
                 document.getElementById('shortenedDiv').style.visibility = "visible"
+                document.getElementById('url-shortened').href = this.response;
                 document.getElementById('url-shortened').innerHTML = this.response;
             } else {
                 // Request failed

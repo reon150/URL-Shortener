@@ -1,4 +1,3 @@
-@import "reset.css";
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
 
 body {
@@ -11,7 +10,7 @@ header {
     display: block;
     width: 100%;
     height: auto;
-    margin: 3rem auto;
+    margin: 1% auto;
 }
 
 h1 {
@@ -26,7 +25,7 @@ h1 {
 h2 {
     text-align: center;
     font-size: 1.8rem;
-    margin-bottom: 1rem;
+    margin-bottom: 5%;
 }
 
 main {
@@ -39,8 +38,8 @@ main {
     background: #1e3c72;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #2a5298, #1e3c72);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #2a5298, #1e3c72); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    margin: 1rem 0;
-    padding: 2.5rem;
+    margin: 5% 0;
+    padding: 5%;
     border-radius: 1rem;
 }
 
@@ -50,14 +49,14 @@ main {
 	background-color:#007dc1;
 	border-radius:3px;
 	border:1px solid #124d77;
-	display:inline-block;
+	display:block;
 	cursor:pointer;
 	color:#ffffff;
 	font-family:Arial;
 	font-size: 1.5rem;
-	padding:6px 24px;
+	padding: 6px 24px;
 	text-decoration:none;
-	text-shadow:0px 1px 0px #154682;
+	text-shadow: 0px 1px 0px #154682;
 }
 .btn:hover {
 	background:linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
@@ -69,21 +68,21 @@ main {
 }
 
 .container input, .container .btn {
-    display: block;
-    padding: 1rem;
-    width: -webkit-fill-available;
+    padding: 2%;
+    width: 100%;
     border-radius: 1rem;
 }
 
 .container input {
     margin: 1rem auto;
+    box-sizing: border-box;
 }
 
 #shortenedDiv {
     visibility: hidden;
 }
 
-.url-shortened {
+.url-shortened-div {
     border: 4px solid #07076d;
     padding: 1rem;
     text-align: center;
@@ -97,19 +96,5 @@ footer {
 @media (max-width: 700px) {
     h1 {
         font-size: 2rem;
-    }
-
-    header {
-        margin: 1rem auto;
-    }
-
-    main {
-        width: auto;
-        padding: 1rem;
-        margin-top: 1rem;
-    }
-
-    .container {
-        margin-bottom: 0;
     }
 }
